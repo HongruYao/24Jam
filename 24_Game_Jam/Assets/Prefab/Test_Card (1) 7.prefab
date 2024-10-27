@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9070060433494728410}
   - component: {fileID: 8507100387333929481}
   m_Layer: 0
-  m_Name: Test_Card (1) 2
+  m_Name: Test_Card (1) 7
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -101,13 +101,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderManager: {fileID: 0}
-  leftShareholdersEffect: 1
-  leftWorkersEffect: 0
-  leftDevelopEffect: 1
+  leftShareholdersEffect: 3
+  leftWorkersEffect: -2
+  leftDevelopEffect: 0
   leftDesignEffect: 0
-  rightShareholdersEffect: 2
-  rightWorkersEffect: -1
-  rightDevelopEffect: 1
+  rightShareholdersEffect: 0
+  rightWorkersEffect: 1
+  rightDevelopEffect: 0
   rightDesignEffect: 0
 --- !u!114 &7999943048258975834
 MonoBehaviour:
@@ -125,13 +125,14 @@ MonoBehaviour:
   nameText: {fileID: 0}
   leftOptionText: {fileID: 0}
   rightOptionText: {fileID: 0}
-  questContent: 'Debt financing
+  questContent: 'Expand the market
 
-    The company plans to use debt financing to support
-    the development of new projects.'
-  nameContent: Shareholders
-  leftOptionContent: Fixed-rate debt
-  rightOptionContent: Floating-rate debt
+    We believe that appropriately expanding the
+    low-end market can reap the dividends of a large user base, but there is a risk
+    of losing brand reputation'
+  nameContent: General Staff
+  leftOptionContent: Attack the low-end market
+  rightOptionContent: Focus on the existing market
 --- !u!114 &9070060433494728410
 MonoBehaviour:
   m_ObjectHideFlags: 0

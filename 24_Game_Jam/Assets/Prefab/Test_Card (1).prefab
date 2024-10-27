@@ -101,14 +101,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderManager: {fileID: 0}
-  leftShareholdersEffect: 0.5
-  leftWorkersEffect: -1
-  leftDevelopEffect: 0
-  leftDesignEffect: 0
-  rightShareholdersEffect: 0
-  rightWorkersEffect: 2
-  rightDevelopEffect: 0
-  rightDesignEffect: -2
+  leftShareholdersEffect: 2
+  leftWorkersEffect: 0
+  leftDevelopEffect: -1
+  leftDesignEffect: -1
+  rightShareholdersEffect: -2
+  rightWorkersEffect: 0
+  rightDevelopEffect: 1
+  rightDesignEffect: 1
 --- !u!114 &7999943048258975834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,10 +125,13 @@ MonoBehaviour:
   nameText: {fileID: 0}
   leftOptionText: {fileID: 0}
   rightOptionText: {fileID: 0}
-  questContent: We are the best car enterrprise
-  nameContent: Joseph
-  leftOptionContent: Let's do this
-  rightOptionContent: Fuck you
+  questContent: 'Spending management
+
+    We need to manage cash flow under the new
+    policy to ensure that the company has sufficient funds for operations.'
+  nameContent: Shareholders
+  leftOptionContent: Control spending
+  rightOptionContent: Relax spending
 --- !u!114 &9070060433494728410
 MonoBehaviour:
   m_ObjectHideFlags: 0

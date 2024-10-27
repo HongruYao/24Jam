@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9070060433494728410}
   - component: {fileID: 8507100387333929481}
   m_Layer: 0
-  m_Name: Test_Card (1) 2
+  m_Name: Test_Card (1) 21
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -101,14 +101,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderManager: {fileID: 0}
-  leftShareholdersEffect: 1
-  leftWorkersEffect: 0
-  leftDevelopEffect: 1
-  leftDesignEffect: 0
-  rightShareholdersEffect: 2
-  rightWorkersEffect: -1
-  rightDevelopEffect: 1
-  rightDesignEffect: 0
+  leftShareholdersEffect: -1
+  leftWorkersEffect: 2
+  leftDevelopEffect: 0
+  leftDesignEffect: 1
+  rightShareholdersEffect: 1
+  rightWorkersEffect: 0
+  rightDevelopEffect: 0
+  rightDesignEffect: -1
 --- !u!114 &7999943048258975834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,13 +125,23 @@ MonoBehaviour:
   nameText: {fileID: 0}
   leftOptionText: {fileID: 0}
   rightOptionText: {fileID: 0}
-  questContent: 'Debt financing
-
-    The company plans to use debt financing to support
-    the development of new projects.'
-  nameContent: Shareholders
-  leftOptionContent: Fixed-rate debt
-  rightOptionContent: Floating-rate debt
+  questContent: "C\u0101nzh\u01CEn x\u012Bn de d\xE0x\xEDng ch\u0113zh\u01CEn w\u01D2men
+    xi\u01CEng ji\u0101ng w\u01D2men xi\xE0nz\xE0i zu\xECx\u012Bn de prototype c\u0101nji\u0101
+    x\u012Bn j\u01D4b\xE0n de ch\u0113zh\u01CEn, zh\u01CEnsh\xEC g\u014Dngs\u012B
+    zu\xECx\u012Bn de sh\xE8j\xEC qi\u01CEo s\u012B. Xu\u01CEnxi\xE0ng A: D\xE0j\u01D4
+    j\xECng\u014Dng zh\u01CEnhu\xEC b\xF9t\xF3ng f\xE1nxi\u01CEng j\u01D0ngu\u01CEn
+    d\xF2ngy\xF2ngle d\xE0li\xE0ng z\u012Byu\xE1n c\u0101nji\u0101 zh\u01CEnl\u01CEn,
+    d\xE0nsh\xEC hu\xF2d\xE9le k\u014Dngqi\xE1n de p\xF9gu\u0101ng d\xF9. X\u012By\u01D0nle
+    d\xE0li\xE0ng d\xECngd\u0101n, p\u01D0np\xE1i zh\u012Bm\xEDngd\xF9 t\xEDg\u0101o.
+    SH -1 GS +2 TD +0 CD +1 xu\u01CEnxi\xE0ng B: B\xF9c\u0101nji\u0101 p\xEDngb\xF9q\u012Bngy\xFAn
+    w\xE0igu\u0101n b\xF9m\xE9n de sh\xE8j\xEC m\xE9iy\u01D2u z\xFAg\xF2u de chu\u0101ngk\u01D2u
+    p\xF9gu\u0101ng, b\xF9m\xE9n y\u01D2u xi\u0113x\u01D4 de b\xF9m\u01CEn, d\xE0n
+    b\xF9z\xFA w\xE9i j\xF9. SH +1 GS +0 TD +0 CD -1 \u2014 Dennis SHAW\r\n\u5C55\u5F00\r\n279
+    / 5,000\r\nParticipate in a new large auto show\r\nWe want to take our latest
+    prototype to a new auto show to showcase the company's latest design ideas."
+  nameContent: Concept Department
+  leftOptionContent: Go big at the show
+  rightOptionContent: Do not participate
 --- !u!114 &9070060433494728410
 MonoBehaviour:
   m_ObjectHideFlags: 0

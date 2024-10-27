@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9070060433494728410}
   - component: {fileID: 8507100387333929481}
   m_Layer: 0
-  m_Name: Test_Card (1) 2
+  m_Name: Test_Card (1) 17
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -101,14 +101,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderManager: {fileID: 0}
-  leftShareholdersEffect: 1
-  leftWorkersEffect: 0
-  leftDevelopEffect: 1
-  leftDesignEffect: 0
-  rightShareholdersEffect: 2
-  rightWorkersEffect: -1
-  rightDevelopEffect: 1
-  rightDesignEffect: 0
+  leftShareholdersEffect: -2
+  leftWorkersEffect: 1
+  leftDevelopEffect: 2
+  leftDesignEffect: 1
+  rightShareholdersEffect: 1
+  rightWorkersEffect: 0
+  rightDevelopEffect: -2
+  rightDesignEffect: -1
 --- !u!114 &7999943048258975834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,13 +125,14 @@ MonoBehaviour:
   nameText: {fileID: 0}
   leftOptionText: {fileID: 0}
   rightOptionText: {fileID: 0}
-  questContent: 'Debt financing
+  questContent: 'Update technical equipment
 
-    The company plans to use debt financing to support
-    the development of new projects.'
-  nameContent: Shareholders
-  leftOptionContent: Fixed-rate debt
-  rightOptionContent: Floating-rate debt
+    We believe that in order to cope
+    with the new wave, we need to invest in updating production equipment to improve
+    production efficiency and product quality.'
+  nameContent: Technical Department
+  leftOptionContent: Update equipment
+  rightOptionContent: Do not update equipment
 --- !u!114 &9070060433494728410
 MonoBehaviour:
   m_ObjectHideFlags: 0
