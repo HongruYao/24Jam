@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9070060433494728410}
   - component: {fileID: 8507100387333929481}
   m_Layer: 0
-  m_Name: Test_Card (1) 2
+  m_Name: Test_Card (1) 16
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -101,11 +101,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderManager: {fileID: 0}
-  leftShareholdersEffect: 1
-  leftWorkersEffect: 0
+  leftShareholdersEffect: 0
+  leftWorkersEffect: 1
   leftDevelopEffect: 1
   leftDesignEffect: 0
-  rightShareholdersEffect: 2
+  rightShareholdersEffect: 0
   rightWorkersEffect: -1
   rightDevelopEffect: 1
   rightDesignEffect: 0
@@ -125,13 +125,13 @@ MonoBehaviour:
   nameText: {fileID: 0}
   leftOptionText: {fileID: 0}
   rightOptionText: {fileID: 0}
-  questContent: 'Debt financing
+  questContent: 'Emission Standards Response
 
-    The company plans to use debt financing to support
-    the development of new projects.'
-  nameContent: Shareholders
-  leftOptionContent: Fixed-rate debt
-  rightOptionContent: Floating-rate debt
+    The government has introduced stricter
+    emission standards for the new year. How do we respond?'
+  nameContent: Technical Department
+  leftOptionContent: Falsify horsepower output reports
+  rightOptionContent: Reduce horsepower output
 --- !u!114 &9070060433494728410
 MonoBehaviour:
   m_ObjectHideFlags: 0

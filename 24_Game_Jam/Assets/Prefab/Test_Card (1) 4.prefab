@@ -101,14 +101,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderManager: {fileID: 0}
-  leftShareholdersEffect: 0.5
-  leftWorkersEffect: -1
-  leftDevelopEffect: 0
-  leftDesignEffect: 0
-  rightShareholdersEffect: 0
-  rightWorkersEffect: 2
-  rightDevelopEffect: 0
-  rightDesignEffect: -2
+  leftShareholdersEffect: -3
+  leftWorkersEffect: 1
+  leftDevelopEffect: 1
+  leftDesignEffect: 1
+  rightShareholdersEffect: 2
+  rightWorkersEffect: -1
+  rightDevelopEffect: -1
+  rightDesignEffect: -1
 --- !u!114 &7999943048258975834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,10 +125,13 @@ MonoBehaviour:
   nameText: {fileID: 0}
   leftOptionText: {fileID: 0}
   rightOptionText: {fileID: 0}
-  questContent: Do you need more investment next semester
-  nameContent: Oreo
-  leftOptionContent: Yes, please
-  rightOptionContent: No, it will not work
+  questContent: 'Salary adjustment
+
+    Wwe request that we can get a certain degree
+    of salary adjustment accordingly, thank you'
+  nameContent: Shareholders
+  leftOptionContent: Salary adjustment
+  rightOptionContent: I want to buy a yacht to reward myself!
 --- !u!114 &9070060433494728410
 MonoBehaviour:
   m_ObjectHideFlags: 0

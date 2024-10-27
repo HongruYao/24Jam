@@ -101,14 +101,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderManager: {fileID: 0}
-  leftShareholdersEffect: 0.5
-  leftWorkersEffect: -1
+  leftShareholdersEffect: 2
+  leftWorkersEffect: 0
   leftDevelopEffect: 0
   leftDesignEffect: 0
-  rightShareholdersEffect: 0
-  rightWorkersEffect: 2
+  rightShareholdersEffect: -5
+  rightWorkersEffect: 0
   rightDevelopEffect: 0
-  rightDesignEffect: -2
+  rightDesignEffect: 0
 --- !u!114 &7999943048258975834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,10 +125,13 @@ MonoBehaviour:
   nameText: {fileID: 0}
   leftOptionText: {fileID: 0}
   rightOptionText: {fileID: 0}
-  questContent: We are the worst car enterrprise
-  nameContent: Biden
-  leftOptionContent: Let's do this
-  rightOptionContent: Fuck you
+  questContent: 'Bubble Market
+
+    We need you to decide whether to participate
+    in short-term speculation in the market.'
+  nameContent: Shareholders
+  leftOptionContent: Invest in a small amount
+  rightOptionContent: Chasing the bubble
 --- !u!114 &9070060433494728410
 MonoBehaviour:
   m_ObjectHideFlags: 0
