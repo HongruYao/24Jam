@@ -8,16 +8,19 @@ public class CardHover : MonoBehaviour
     public GameObject namePanel;
     public Collider2D leftZone;
     public Collider2D rightZone;
-    public CanvasGroup leftPanel; // Reference to CanvasGroup for transparency control
-    public CanvasGroup rightPanel; // Reference to CanvasGroup for transparency control
-    public CardEffects cardEffects; // Reference to the CardEffects script on the card prefab
+    public CanvasGroup leftPanel; 
+    public CanvasGroup rightPanel; 
+    public CardEffects cardEffects; 
 
     private bool isLeftHovered = false;
     private bool isRightHovered = false;
 
+    public AudioSource leftSound;
+    public AudioSource rightSound;
+
     private void Start()
     {
-        // Automatically find and assign objects by name if they are not already assigned
+        
         if (namePanel == null)
             namePanel = GameObject.Find("Player_Name_Panel");
 
@@ -32,18 +35,15 @@ public class CardHover : MonoBehaviour
 
         if (rightPanel == null)
             rightPanel = GameObject.Find("Right_Panel").GetComponent<CanvasGroup>();
-
-        // Set initial transparency
+      
         SetPanelTransparency(leftPanel, 0);
         SetPanelTransparency(rightPanel, 0);
     }
 
     private void Update()
-    {
-        // Skip animation triggering if the name panel is active
+    {     
         if (namePanel != null && namePanel.activeSelf)
         {
-            // Make both panels transparent if the name panel is active
             SetPanelTransparency(leftPanel, 0);
             SetPanelTransparency(rightPanel, 0);
             return;
@@ -62,11 +62,11 @@ public class CardHover : MonoBehaviour
                 SetPanelTransparency(rightPanel, 0);
             }
 
-            // Check for left mouse click to trigger Drop_Left animation and apply effects
             if (Input.GetMouseButtonDown(0))
             {
+                leftSound.Play();
                 animator.SetTrigger("Drop_Left");
-                cardEffects.ApplyLeftOptionEffects(); // Call method to apply left option effects
+                cardEffects.ApplyLeftOptionEffects(); 
             }
         }
         else if (rightZone.OverlapPoint(mousePosition))
@@ -80,11 +80,11 @@ public class CardHover : MonoBehaviour
                 SetPanelTransparency(leftPanel, 0);
             }
 
-            // Check for left mouse click to trigger Drop_Right animation and apply effects
             if (Input.GetMouseButtonDown(0))
             {
+                rightSound.Play();
                 animator.SetTrigger("Drop_Right");
-                cardEffects.ApplyRightOptionEffects(); // Call method to apply right option effects
+                cardEffects.ApplyRightOptionEffects(); 
             }
         }
         else
@@ -99,11 +99,9 @@ public class CardHover : MonoBehaviour
             }
         }
     }
-
-    // Helper method to set panel transparency
     private void SetPanelTransparency(CanvasGroup panel, float alpha)
     {
         panel.alpha = alpha;
-        panel.blocksRaycasts = alpha > 0; // Only block raycasts if visible
+        panel.blocksRaycasts = alpha > 0; 
     }
 }
