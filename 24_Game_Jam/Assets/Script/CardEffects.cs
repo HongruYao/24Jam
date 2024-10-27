@@ -34,7 +34,7 @@ public class CardEffects : MonoBehaviour
     // Triggered when Drop_Left is chosen
     public void ApplyLeftOptionEffects()
     {
-        sliderManager.AdjustShareholders(leftShareholdersEffect);
+        sliderManager.AdjustShareholder(leftShareholdersEffect);
         sliderManager.AdjustWorkers(leftWorkersEffect);
         sliderManager.AdjustDevelop(leftDevelopEffect);
         sliderManager.AdjustDesign(leftDesignEffect);
@@ -43,7 +43,7 @@ public class CardEffects : MonoBehaviour
     // Triggered when Drop_Right is chosen
     public void ApplyRightOptionEffects()
     {
-        sliderManager.AdjustShareholders(rightShareholdersEffect);
+        sliderManager.AdjustShareholder(rightShareholdersEffect);
         sliderManager.AdjustWorkers(rightWorkersEffect);
         sliderManager.AdjustDevelop(rightDevelopEffect);
         sliderManager.AdjustDesign(rightDesignEffect);
